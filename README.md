@@ -1,2 +1,2 @@
-##Hi There 
-##This is my first git study app
+#Hi There 
+#This is my first git study app
