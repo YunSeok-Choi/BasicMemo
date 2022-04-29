@@ -8,9 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var research: String = ""
+    
     var body: some View {
-        Text("멤모")
-            .font(.title)
+        
+        VStack {
+            HStack{
+            Text("메모")
+                    .font(.title)
+                    .multilineTextAlignment(.leading)
+                Spacer()
+            }
+            .padding()
+            
+            HStack{
+                Image(systemName: "magnifyingglass")
+                TextField("검색", text: $research)
+                    
+            }.padding()
+        }
+        
     }
 }
 
