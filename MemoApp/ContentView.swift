@@ -11,25 +11,35 @@ struct ContentView: View {
     @State var research: String = ""
     
     var body: some View {
-        
-        VStack {
-            HStack{
-            Text("메모")
-                    .font(.title)
-                    .multilineTextAlignment(.leading)
-                Spacer()
-            }
-            .padding()
-            
-            HStack{
-                Image(systemName: "magnifyingglass")
-                TextField("검색", text: $research)
+        NavigationView{
+            VStack {
+                HStack{
+                    Text("메모")
+                        .font(.title)
+                        .multilineTextAlignment(.leading)
+                    Spacer()
+                }
+                .padding()
+                
+                HStack{
+                    Image(systemName: "magnifyingglass")
+                    TextField("검색", text: $research)
                     
-            }.padding()
+                }.padding()
+                
+                
+                NavigationLink(destination: EmptyView()){
+                    Spacer()
+                    Image(systemName: "square.and.pencil")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                }.padding()
+            }
         }
-        
     }
+    
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
