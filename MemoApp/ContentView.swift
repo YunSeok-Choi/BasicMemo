@@ -9,8 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("멤모")
-            .font(.title)
+        NavigationView{
+            VStack{
+                Text("멤모")
+                    .font(.title)
+                
+                NavigationLink(destination: EmptyView()){
+                    Spacer()
+                    Image(systemName: "square.and.pencil")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                }.padding()
+                
+            }
+        }
     }
 }
 
