@@ -27,6 +27,7 @@ struct ContentView: View {
                     
                 }.padding()
                 
+                Spacer()
                 
                 NavigationLink(destination: EmptyView()){
                     Spacer()
@@ -34,6 +35,7 @@ struct ContentView: View {
                         .resizable()
                         .frame(width: 30, height: 30)
                 }.padding()
+                
             }
         }
     }
