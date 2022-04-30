@@ -9,17 +9,16 @@ import SwiftUI
 
 struct MemoWriteView: View {
     @State var titleMemo = ""
-    @State var bodyMemo = "Hello"
+    @State var bodyMemo = "아무내용"
     var body: some View {
         VStack {
             NavigationView{
                 VStack{
-                    TextField("memotitle", text: $titleMemo)
+                    TextField("메모 제목", text: $titleMemo)
                         .padding(.horizontal)
                         .font(.custom("", size: 40))
                         
                     TextEditor(text: $bodyMemo)
-                        .foregroundColor(.gray)
                         .padding()
                 }
             }
