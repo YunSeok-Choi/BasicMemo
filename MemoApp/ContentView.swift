@@ -28,7 +28,7 @@ struct ContentView: View {
                 }.padding()
                 
                 
-                NavigationLink(destination: EmptyView()){
+                NavigationLink(destination: MemoWriteView()){
                     Spacer()
                     Image(systemName: "square.and.pencil")
                         .resizable()
