@@ -16,7 +16,7 @@ struct MemoWriteView: View {
                 VStack{
                     TextField("memotitle", text: $titleMemo)
                         .padding(.horizontal)
-                        .font(Font.system(size: 40, design: .default))
+                        .font(.custom("", size: 40))
                         
                     TextEditor(text: $bodyMemo)
                         .foregroundColor(.gray)
