@@ -27,7 +27,9 @@ struct ContentView: View {
                     
                 }.padding()
                 
-                Spacer()
+                List{
+                    Text("메모 내용")
+                }
                 
                 NavigationLink(destination: MemoWriteView()){
                     Spacer()
