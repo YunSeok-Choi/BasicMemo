@@ -12,6 +12,7 @@
 		797486FE28192878000DFE3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797486FD28192878000DFE3E /* ContentView.swift */; };
 		7974870028192879000DFE3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797486FF28192879000DFE3E /* Assets.xcassets */; };
 		7974870328192879000DFE3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7974870228192879000DFE3E /* Preview Assets.xcassets */; };
+		79E2CDF12821199E0018AC4D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2CDF02821199E0018AC4D /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		797486FD28192878000DFE3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		797486FF28192879000DFE3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7974870228192879000DFE3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79E2CDF02821199E0018AC4D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				797486FB28192878000DFE3E /* MemoAppApp.swift */,
 				797486FD28192878000DFE3E /* ContentView.swift */,
+				79E2CDF02821199E0018AC4D /* ListView.swift */,
 				791EE893281D1C4100EBB7E2 /* MemoWriteView.swift */,
 				797486FF28192879000DFE3E /* Assets.xcassets */,
 				7974870128192879000DFE3E /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E2CDF12821199E0018AC4D /* ListView.swift in Sources */,
 				797486FE28192878000DFE3E /* ContentView.swift in Sources */,
 				797486FC28192878000DFE3E /* MemoAppApp.swift in Sources */,
 				791EE894281D1C4100EBB7E2 /* MemoWriteView.swift in Sources */,
