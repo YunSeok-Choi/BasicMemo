@@ -11,18 +11,21 @@ struct MemoWriteView: View {
     @State var titleMemo = ""
     @State var bodyMemo = "아무내용"
     var body: some View {
-        VStack {
-            NavigationView{
+            VStack{
                 VStack{
                     TextField("메모 제목", text: $titleMemo)
                         .padding(.horizontal)
                         .font(.custom("", size: 40))
-                        
+                    
                     TextEditor(text: $bodyMemo)
-                        .padding()
+                        .padding(.horizontal)
                 }
+                .padding()
+                .navigationBarItems(trailing: NavigationLink(destination: ContentView(), label: {
+                    Text("완료")
+                }))
             }
-        }
+        
     }
 }
 
