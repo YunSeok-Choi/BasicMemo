@@ -11,6 +11,7 @@ struct ContentView: View {
     @State var research: String = ""
     
     var body: some View {
+        
         NavigationView{
             VStack {
                 HStack{
@@ -20,12 +21,19 @@ struct ContentView: View {
                     Spacer()
                 }
                 .padding()
+                VStack(alignment: .center, spacing: 0.2){
+                    HStack{
+                        Image(systemName: "magnifyingglass")
+                        TextField("검색", text: $research)
+                    }
+                    .padding()
+                    .background(Color.init(red: 0.95, green: 0.95, blue: 0.95),alignment: .center)
+                    .cornerRadius(15)
+                    .padding()
+                }
                 
-                HStack{
-                    Image(systemName: "magnifyingglass")
-                    TextField("검색", text: $research)
-                    
-                }.padding()
+                ListView()
+                    .listStyle(.plain)
                 
                 
                 NavigationLink(destination: MemoWriteView()){
@@ -35,7 +43,9 @@ struct ContentView: View {
                         .frame(width: 30, height: 30)
                 }.padding()
                 
-            }
+            }.navigationTitle("")
+                .navigationBarHidden(true)
+            
         }
     }
     
