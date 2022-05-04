@@ -12,12 +12,12 @@ class MemoStore: Identifiable, ObservableObject {
     
     init() {
         list = [
-            Memo(content: "Hello",insertDate: Date.now)
+            Memo(titleMemo: "Hello", bodyMemo: "word" ,insertDate: Date.now)
         ]
     }
     
-    func insert(memo: String){
-        list.insert(Memo(content: memo), at: 0)
+    func insert(title: String, body: String){
+        list.insert(Memo(titleMemo: title, bodyMemo: body), at: 0)
     }
     
     
