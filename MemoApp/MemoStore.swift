@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MemoStore: Identifiable, ObservableObject {
+class MemoStore: ObservableObject {
     @Published var list: [Memo]
     
     init() {
