@@ -36,9 +36,6 @@ struct ContentView: View {
                 }
                 
                 
-                
-                
-                
                 List{
                     ForEach(store.list){ memo in
                         NavigationLink{
