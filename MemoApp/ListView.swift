@@ -27,6 +27,6 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView(memo: Memo(content: "Test"))
+        ListView(memo: Memo(titleMemo: "Test", bodyMemo: "Test"))
     }
 }
