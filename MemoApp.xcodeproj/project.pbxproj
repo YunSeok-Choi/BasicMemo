@@ -67,10 +67,10 @@
 				797486FB28192878000DFE3E /* MemoAppApp.swift */,
 				797486FD28192878000DFE3E /* ContentView.swift */,
 				79E2CDF02821199E0018AC4D /* ListView.swift */,
-				791A4EF62822698E00541914 /* Persistence.swift */,
 				791EE893281D1C4100EBB7E2 /* MemoWriteView.swift */,
 				791A4EEF282246E000541914 /* Memo.swift */,
 				791A4EF12822489E00541914 /* MemoStore.swift */,
+				791A4EF62822698E00541914 /* Persistence.swift */,
 				797486FF28192879000DFE3E /* Assets.xcassets */,
 				7974870128192879000DFE3E /* Preview Content */,
 			);
