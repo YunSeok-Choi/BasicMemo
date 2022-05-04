@@ -12,7 +12,8 @@ class MemoStore: ObservableObject {
     
     init() {
         list = [
-            Memo(titleMemo: "Hello", bodyMemo: "word" ,insertDate: Date.now)
+            Memo(titleMemo: "Hello", bodyMemo: "word" ,insertDate: Date.now),
+            Memo(titleMemo: "EE", bodyMemo: "RR", insertDate: Date.now)
         ]
     }
     

@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var research: String = ""
     
     @EnvironmentObject var store: MemoStore
+    
+    @State var research: String = ""
     
     var body: some View {
         
@@ -35,7 +36,7 @@ struct ContentView: View {
                 }
                 
                 List{
-                    ForEach(store.list){memo in
+                    ForEach(store.list){ memo in
                         NavigationLink{
                             MemoWriteView()
                         } label: {

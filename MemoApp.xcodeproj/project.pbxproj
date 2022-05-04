@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		791A4EF0282246E000541914 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791A4EEF282246E000541914 /* Memo.swift */; };
 		791A4EF22822489E00541914 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791A4EF12822489E00541914 /* MemoStore.swift */; };
+		791A4EF5282268DB00541914 /* memo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 791A4EF3282268DB00541914 /* memo.xcdatamodeld */; };
+		791A4EF72822698E00541914 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791A4EF62822698E00541914 /* Persistence.swift */; };
 		791EE894281D1C4100EBB7E2 /* MemoWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791EE893281D1C4100EBB7E2 /* MemoWriteView.swift */; };
 		797486FC28192878000DFE3E /* MemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797486FB28192878000DFE3E /* MemoAppApp.swift */; };
 		797486FE28192878000DFE3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797486FD28192878000DFE3E /* ContentView.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		791A4EEF282246E000541914 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		791A4EF12822489E00541914 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
+		791A4EF4282268DB00541914 /* memo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = memo.xcdatamodel; sourceTree = "<group>"; };
+		791A4EF62822698E00541914 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		791EE893281D1C4100EBB7E2 /* MemoWriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoWriteView.swift; sourceTree = "<group>"; };
 		797486F828192878000DFE3E /* MemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		797486FB28192878000DFE3E /* MemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoAppApp.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 		797486EF28192878000DFE3E = {
 			isa = PBXGroup;
 			children = (
+				791A4EF3282268DB00541914 /* memo.xcdatamodeld */,
 				797486FA28192878000DFE3E /* MemoApp */,
 				797486F928192878000DFE3E /* Products */,
 			);
@@ -62,8 +67,9 @@
 				797486FB28192878000DFE3E /* MemoAppApp.swift */,
 				797486FD28192878000DFE3E /* ContentView.swift */,
 				79E2CDF02821199E0018AC4D /* ListView.swift */,
-				791A4EEF282246E000541914 /* Memo.swift */,
+				791A4EF62822698E00541914 /* Persistence.swift */,
 				791EE893281D1C4100EBB7E2 /* MemoWriteView.swift */,
+				791A4EEF282246E000541914 /* Memo.swift */,
 				791A4EF12822489E00541914 /* MemoStore.swift */,
 				797486FF28192879000DFE3E /* Assets.xcassets */,
 				7974870128192879000DFE3E /* Preview Content */,
@@ -150,11 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				791A4EF0282246E000541914 /* Memo.swift in Sources */,
+				791A4EF72822698E00541914 /* Persistence.swift in Sources */,
 				791A4EF22822489E00541914 /* MemoStore.swift in Sources */,
 				79E2CDF12821199E0018AC4D /* ListView.swift in Sources */,
 				797486FE28192878000DFE3E /* ContentView.swift in Sources */,
 				797486FC28192878000DFE3E /* MemoAppApp.swift in Sources */,
 				791EE894281D1C4100EBB7E2 /* MemoWriteView.swift in Sources */,
+				791A4EF5282268DB00541914 /* memo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +361,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		791A4EF3282268DB00541914 /* memo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				791A4EF4282268DB00541914 /* memo.xcdatamodel */,
+			);
+			currentVersion = 791A4EF4282268DB00541914 /* memo.xcdatamodel */;
+			path = memo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 797486F028192878000DFE3E /* Project object */;
 }
