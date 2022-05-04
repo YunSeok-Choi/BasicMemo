@@ -42,7 +42,6 @@ struct ContentView: View {
                         } label: {
                             ListView(memo: memo)
                         }
-                        
                     }
                 }.listStyle(.plain)
                     
