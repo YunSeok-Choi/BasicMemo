@@ -13,7 +13,7 @@ struct ListView: View {
     var body: some View {
         
         VStack(alignment: .leading){
-            Text(memo.content)
+            Text(memo.bodyMemo)
                 .font(.body)
                 .lineLimit(1)
             Text(memo.insertDate,style: .date)
