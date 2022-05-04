@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State var research: String = ""
     
+    @EnvironmentObject var store: MemoStore
+    
     var body: some View {
         
         NavigationView{
@@ -32,9 +34,17 @@ struct ContentView: View {
                     .padding()
                 }
                 
-                ListView()
-                    .listStyle(.plain)
-                
+                List{
+                    ForEach(store.list){memo in
+                        NavigationLink{
+                            MemoWriteView()
+                        } label: {
+                            ListView(memo: memo)
+                        }
+                        
+                    }
+                }.listStyle(.plain)
+                    
                 
                 NavigationLink(destination: MemoWriteView()){
                     Spacer()
@@ -55,5 +65,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(MemoStore())
     }
 }

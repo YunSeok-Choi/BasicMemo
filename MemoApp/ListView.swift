@@ -8,22 +8,25 @@
 import SwiftUI
 
 struct ListView: View {
-    @State var subname = ["메모장1", "메모장2"]
+    @ObservedObject var memo: Memo
+    
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(subname, id: \.self){ s in
-                    NavigationLink(destination: EmptyView()){
-                        Text(s)
-                    }
-                }
-            }
+        
+        VStack(alignment: .leading){
+            Text(memo.content)
+                .font(.body)
+                .lineLimit(1)
+            Text(memo.insertDate,style: .date)
+                .font(.caption)
+                .foregroundColor(.secondary)
+            
         }
     }
 }
 
+
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        ListView(memo: Memo(content: "Test"))
     }
 }
