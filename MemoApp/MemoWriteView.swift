@@ -16,27 +16,24 @@ struct MemoWriteView: View {
     @State var bodyMemo = ""
     
     var body: some View {
-        NavigationView{
-            VStack{
-                TextField("메모 제목", text: $titleMemo)
-                    .padding(.horizontal)
-                    .font(.custom("", size: 40))
-                    .onAppear {
-                        if let memo = memo {
-                            titleMemo = memo.titleMemo
-                        }
+        VStack{
+            TextField("메모 제목", text: $titleMemo)
+                .padding(.horizontal)
+                .font(.custom("", size: 40))
+                .onAppear {
+                    if let memo = memo {
+                        titleMemo = memo.titleMemo
                     }
-                
-                TextEditor(text: $bodyMemo)
-                    .padding(.horizontal)
-                    .onAppear{
-                        if let memo = memo {
-                            bodyMemo = memo.bodyMemo
-                        }
+                }
+            
+            TextEditor(text: $bodyMemo)
+                .padding(.horizontal)
+                .onAppear{
+                    if let memo = memo {
+                        bodyMemo = memo.bodyMemo
                     }
-            }
+                }
         }
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
                 Button {
@@ -49,6 +46,8 @@ struct MemoWriteView: View {
     }
     
 }
+
+
 
 struct MemoWriteView_Previews: PreviewProvider {
     static var previews: some View {
