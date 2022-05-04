@@ -18,31 +18,36 @@ struct MemoWriteView: View {
     var body: some View {
         NavigationView{
             VStack{
-                VStack{
-                    TextField("메모 제목", text: $titleMemo)
-                        .padding(.horizontal)
-                        .font(.custom("", size: 40))
-                        .onAppear {
-                            if let memo = memo {
-                                //titleMemo = memo.titleMemo
-                            }
+                TextField("메모 제목", text: $titleMemo)
+                    .padding(.horizontal)
+                    .font(.custom("", size: 40))
+                    .onAppear {
+                        if let memo = memo {
+                            titleMemo = memo.titleMemo
                         }
-                    
-                    TextEditor(text: $bodyMemo)
-                        .padding(.horizontal)
-                        .onAppear{
-                            if let memo = memo {
-                                bodyMemo = memo.bodyMemo
-                            }
+                    }
+                
+                TextEditor(text: $bodyMemo)
+                    .padding(.horizontal)
+                    .onAppear{
+                        if let memo = memo {
+                            bodyMemo = memo.bodyMemo
                         }
-                }
-                .padding()
-                .navigationBarItems(trailing: NavigationLink(destination: EmptyView(), label: {
+                    }
+            }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarTrailing) {
+                Button {
+                    store.insert(title: titleMemo, body: bodyMemo)
+                } label: {
                     Text("완료")
-                }))
+                }
             }
         }
     }
+    
 }
 
 struct MemoWriteView_Previews: PreviewProvider {
