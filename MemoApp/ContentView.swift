@@ -38,7 +38,7 @@ struct ContentView: View {
                 List{
                     ForEach(store.list){ memo in
                         NavigationLink{
-                            MemoWriteView()
+                            MemoWriteView(memo: memo)
                         } label: {
                             ListView(memo: memo)
                         }
