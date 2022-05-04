@@ -35,6 +35,10 @@ struct ContentView: View {
                     .padding()
                 }
                 
+                
+                
+                
+                
                 List{
                     ForEach(store.list){ memo in
                         NavigationLink{
