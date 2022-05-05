@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/Git-#F05032?style=flat-square&logo=Git&logoColor=#F05032"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white"/>
 
 # 이 앱은 터미널을 사용하여 Git을 공부하기 위해 만들어진 프로젝트입니다.
 
