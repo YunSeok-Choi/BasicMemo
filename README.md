@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/Git-#F05032?style=flat-square&logo=Git&logoColor=#F05032"/>
+
 # 이 앱은 터미널을 사용하여 Git을 공부하기 위해 만들어진 프로젝트입니다.
 
 ## Git에 대해 공부해보고, 어떨 때 어떤 명령어를 사용하는게 효율적인지, 잘 활용할 수 있는가를 목표로 삼았습니다.
